@@ -139,6 +139,18 @@
     animation: fadeIn 0.5s ease-in;
   }
   
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -152,5 +164,10 @@
   
   .glow {
     @apply shadow-lg hover:shadow-2xl transition-shadow duration-300;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent;
   }
 }

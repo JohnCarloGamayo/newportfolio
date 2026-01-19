@@ -26,9 +26,9 @@ export default function Education() {
         <h2 className="text-2xl font-bold">Education</h2>
       </div>
       
-      <div className="space-y-4">
+      <div className="space-y-6">
         {education.map((edu, idx) => (
-          <Card key={idx} className="p-4">
+          <Card key={idx} className="p-6 bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 group">
             <h3 className="font-bold text-foreground text-sm">{edu.degree}</h3>
             <p className="text-xs text-muted-foreground mt-1">{edu.school}</p>
             <div className="flex justify-between items-center mt-2">

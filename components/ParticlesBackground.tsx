@@ -45,7 +45,7 @@ export default function ParticlesBackground() {
             },
             onHover: {
               enable: true,
-              mode: 'repulse',
+              mode: ['grab', 'repulse'],
             },
             resize: {
               enable: true,
@@ -53,24 +53,30 @@ export default function ParticlesBackground() {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 8,
+            },
+            grab: {
+              distance: 200,
+              links: {
+                opacity: 0.5,
+              },
             },
             repulse: {
-              distance: 100,
+              distance: 150,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: theme === 'dark' ? '#ffffff' : '#000000',
+            value: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8'],
           },
           links: {
-            color: theme === 'dark' ? '#ffffff' : '#000000',
-            distance: 150,
+            color: '#60a5fa',
+            distance: 180,
             enable: true,
-            opacity: 0.2,
-            width: 1,
+            opacity: 0.6,
+            width: 2,
           },
           collisions: {
             enable: true,
@@ -81,24 +87,34 @@ export default function ParticlesBackground() {
             outModes: {
               default: 'bounce',
             },
-            random: false,
-            speed: 1,
+            random: true,
+            speed: 1.5,
             straight: false,
           },
           number: {
             density: {
               enable: true,
             },
-            value: 80,
+            value: 150,
           },
           opacity: {
-            value: 0.3,
+            value: 0.8,
+            animation: {
+              enable: true,
+              speed: 1,
+              sync: false,
+            },
           },
           shape: {
             type: 'circle',
           },
           size: {
-            value: { min: 1, max: 3 },
+            value: { min: 2, max: 6 },
+            animation: {
+              enable: true,
+              speed: 2,
+              sync: false,
+            },
           },
         },
         detectRetina: true,
