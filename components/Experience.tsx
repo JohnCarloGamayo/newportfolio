@@ -15,7 +15,7 @@ export default function Experience() {
       title: "Bachelor of Science in Information Technology",
       company: "Bulacan State University",
       date: "4th Year (Ongoing)",
-      description: "With honor. Best Capstone project award."
+      description: ""
     },
   ]
 
