@@ -6,6 +6,12 @@ import { Card } from '@/components/ui/card'
 export default function Experience() {
   const experiences = [
     {
+      title: "Network Administrator",
+      company: "RMCJJ-ZapConnect (Converge Subcontractor)",
+      date: "2025",
+      description: "Configured and maintained routers and network equipment. Managed customer connections through the RMCJJ ISP management system, handled user provisioning, monitored network status, and performed basic troubleshooting."
+    },
+    {
       title: "Software Developer Intern",
       company: "Lightweight Global Tech Solution Corp.",
       date: "2025 - Present",
