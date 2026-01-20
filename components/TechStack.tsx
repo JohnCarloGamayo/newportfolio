@@ -7,19 +7,40 @@ export default function TechStack() {
   const techStacks = [
     {
       category: "Frontend",
-      tech: ["JavaScript", "TypeScript", "React", "Bootstrap 5"]
+      tech: [
+        { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Bootstrap 5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" }
+      ]
     },
     {
       category: "Backend",
-      tech: ["Node.js", "Python", "Django", "REST API"]
+      tech: [
+        { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+        { name: "Django", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" }
+      ]
     },
     {
-      category: "Mobile & Tools",
-      tech: ["Unity (C#)", "Android", "Git", "Figma"]
+      category: "Database",
+      tech: [
+        { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
+        { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
+      ]
     },
     {
-      category: "Deployment & Cloud",
-      tech: ["Cloudflare", "Reverse Proxy", "Server Management"]
+      category: "Tools & Deployment",
+      tech: [
+        { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "Cloudflare", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" },
+        { name: "Linux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+        { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
+      ]
     }
   ]
 
@@ -38,14 +59,22 @@ export default function TechStack() {
         {techStacks.map((stack, idx) => (
           <Card key={idx} className="p-6 interactive-card bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 rounded-xl hover:shadow-xl hover:shadow-primary/5 group">
             <h3 className="font-bold text-lg text-foreground mb-4 group-hover:text-primary transition-colors">{stack.category}</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-4">
               {stack.tech.map((item, i) => (
-                <span 
+                <div 
                   key={i}
-                  className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                  className="flex items-center gap-2 px-3 py-2 bg-secondary/50 rounded-lg transition-all duration-300 hover:scale-110 hover:bg-primary/20 cursor-pointer group/item"
+                  title={item.name}
                 >
-                  {item}
-                </span>
+                  <img 
+                    src={item.logo} 
+                    alt={item.name}
+                    className="w-6 h-6 object-contain"
+                  />
+                  <span className="text-xs font-medium text-foreground group-hover/item:text-primary">
+                    {item.name}
+                  </span>
+                </div>
               ))}
             </div>
           </Card>

@@ -83,17 +83,23 @@ export default function Header() {
                 variant="default" 
                 size="sm"
                 className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                asChild
               >
-                <Calendar size={16} />
-                Schedule a Call
+                <a href="mailto:johncarlogamayo@gmail.com">
+                  <Calendar size={16} />
+                  Schedule a Call
+                </a>
               </Button>
               <Button 
                 variant="outline" 
                 size="sm"
                 className="gap-2 bg-transparent transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Mail size={16} />
-                Send Email
+                <a href="mailto:johncarlogamayo@gmail.com">
+                  <Mail size={16} />
+                  Send Email
+                </a>
               </Button>
             </div>
 

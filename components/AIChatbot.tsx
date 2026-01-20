@@ -119,12 +119,12 @@ export default function AIChatbot() {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border bg-primary/5">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Bot className="h-5 w-5 text-primary" />
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20">
+                <img src="/images/newprofile.jpg" alt="John Carlo Gamayo" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h3 className="font-semibold text-sm">AI Assistant</h3>
-                <p className="text-xs text-muted-foreground">Ask me about John Carlo</p>
+                <h3 className="font-semibold text-sm">John Carlo Gamayo</h3>
+                <p className="text-xs text-muted-foreground">Ask me anything</p>
               </div>
             </div>
             <Button

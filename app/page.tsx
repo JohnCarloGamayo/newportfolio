@@ -10,6 +10,7 @@ import Projects from '@/components/Projects'
 import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
+import Certificates from '@/components/Certificates'
 import ParticlesBackground from '@/components/ParticlesBackground'
 import AIChatbot from '@/components/AIChatbot'
 
@@ -54,6 +55,9 @@ export default function Home() {
               <Education />
             </div>
             <div className="transform transition-all hover:scale-[1.02] animation-delay-200">
+              <Certificates />
+            </div>
+            <div className="transform transition-all hover:scale-[1.02] animation-delay-300">
               <Contact />
             </div>
           </div>
