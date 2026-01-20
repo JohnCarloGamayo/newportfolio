@@ -11,12 +11,6 @@ export default function Experience() {
       date: "2025 - Present",
       description: "Develop and maintain full-stack web applications using TypeScript and Python. Integrate third-party APIs and implement OCR solutions."
     },
-    {
-      title: "Bachelor of Science in Information Technology",
-      company: "Bulacan State University",
-      date: "4th Year (Ongoing)",
-      description: ""
-    },
   ]
 
   return (
