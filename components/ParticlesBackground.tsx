@@ -73,10 +73,10 @@ export default function ParticlesBackground() {
           },
           links: {
             color: '#60a5fa',
-            distance: 180,
+            distance: 150,
             enable: true,
-            opacity: 0.6,
-            width: 2,
+            opacity: 0.9,
+            width: 1,
           },
           collisions: {
             enable: true,
@@ -88,17 +88,17 @@ export default function ParticlesBackground() {
               default: 'bounce',
             },
             random: true,
-            speed: 1.5,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
             },
-            value: 150,
+            value: 60,
           },
           opacity: {
-            value: 0.8,
+            value: 0.4,
             animation: {
               enable: true,
               speed: 1,
@@ -109,7 +109,7 @@ export default function ParticlesBackground() {
             type: 'circle',
           },
           size: {
-            value: { min: 2, max: 6 },
+            value: { min: 1, max: 3 },
             animation: {
               enable: true,
               speed: 2,
@@ -119,7 +119,7 @@ export default function ParticlesBackground() {
         },
         detectRetina: true,
       }}
-      className="absolute inset-0 -z-10"
+      className="fixed inset-0 z-0 pointer-events-none"
     />
   )
 }

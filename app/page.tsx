@@ -16,13 +16,13 @@ import AIChatbot from '@/components/AIChatbot'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground relative">
       {/* Animated Particles Background */}
       <ParticlesBackground />
       
       {/* Gradient Accent Overlays */}
-      <div className="fixed top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-5" />
-      <div className="fixed bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl -z-5" />
+      <div className="fixed top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10" />
+      <div className="fixed bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl -z-10" />
 
       {/* Header Section */}
       <Header />
