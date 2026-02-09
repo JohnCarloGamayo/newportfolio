@@ -1,14 +1,22 @@
 'use client'
 
-import { Award, Eye } from 'lucide-react'
+import { Award, Eye, Maximize2 } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import Image from 'next/image'
+import ImageViewer from '@/components/ImageViewer'
 import { useState } from 'react'
 
 export default function Certificates() {
   const [selectedCert, setSelectedCert] = useState<number | null>(null)
+  const [imageViewerOpen, setImageViewerOpen] = useState(false)
+  const [viewerImage, setViewerImage] = useState({ src: '', alt: '' })
+
+  const handleImageClick = (src: string, alt: string) => {
+    setViewerImage({ src, alt })
+    setImageViewerOpen(true)
+  }
 
   const certificates = [
     {
@@ -102,14 +110,23 @@ export default function Certificates() {
           </DialogHeader>
           {selectedCert !== null && (
             <div className="p-6 overflow-y-auto max-h-[calc(90vh-80px)]">
-              <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-muted border border-border mb-4">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-muted border border-border mb-4 group">
                 <Image
                   src={certificates[selectedCert].image}
                   alt={certificates[selectedCert].title}
                   fill
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   priority
+                  onClick={() => handleImageClick(certificates[selectedCert].image, certificates[selectedCert].title)}
                 />
+                <Button
+                  variant="secondary"
+                  size="icon"
+                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  onClick={() => handleImageClick(certificates[selectedCert].image, certificates[selectedCert].title)}
+                >
+                  <Maximize2 size={20} />
+                </Button>
               </div>
               <div className="p-4 bg-muted/30 rounded-lg">
                 <h3 className="text-sm font-semibold mb-2 text-muted-foreground uppercase tracking-wide">Details</h3>
@@ -124,6 +141,14 @@ export default function Certificates() {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Image Viewer */}
+      <ImageViewer
+        isOpen={imageViewerOpen}
+        onClose={() => setImageViewerOpen(false)}
+        imageSrc={viewerImage.src}
+        imageAlt={viewerImage.alt}
+      />
     </section>
   )
 }

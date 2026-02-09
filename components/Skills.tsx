@@ -10,19 +10,23 @@ export default function Skills() {
   const skills = [
     {
       category: "Languages & Frameworks",
-      items: ["JavaScript", "TypeScript", "Python", "PHP", "SQL", "Node.js", "React", "Django"]
+      items: ["JavaScript", "TypeScript", "Python", "PHP", "SQL", "Node.js", "React", "Django", "FastAPI", "Vite"]
     },
     {
       category: "Web & Mobile Development",
       items: ["REST API", "HTML5", "CSS3", "Bootstrap 5", "Vanilla PHP", "Android Development", "Mobile UI/UX"]
     },
     {
-      category: "Database & Tools",
-      items: ["MySQL", "PostgreSQL", "SQLite", "Git", "GitHub", "Figma", "Canva", "VS Code", "Postman"]
+      category: "Database & Cloud Services",
+      items: ["MySQL", "PostgreSQL", "SQLite", "Supabase", "MongoDB"]
+    },
+    {
+      category: "Tools & Deployment",
+      items: ["Git", "GitHub", "Vercel", "Railway", "Render", "Figma", "Canva", "VS Code", "Postman"]
     },
     {
       category: "Specializations",
-      items: ["System Architecture", "API Integration", "OCR", "AI Integration", "Debugging & Testing", "UI/UX Design"]
+      items: ["System Architecture", "API Integration", "OCR", "AI Integration", "Google AdSense", "Debugging & Testing", "UI/UX Design"]
     }
   ]
 
