@@ -9,6 +9,7 @@ import TechStack from '@/components/TechStack'
 import Projects from '@/components/Projects'
 import Education from '@/components/Education'
 import Skills from '@/components/Skills'
+import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
 import Certificates from '@/components/Certificates'
 import ParticlesBackground from '@/components/ParticlesBackground'
@@ -43,6 +44,9 @@ export default function Home() {
             </div>
             <div className="transform transition-all hover:scale-[1.01] animation-delay-300">
               <Skills />
+            </div>
+            <div className="transform transition-all hover:scale-[1.01] animation-delay-[400ms]">
+              <Gallery />
             </div>
           </div>
 

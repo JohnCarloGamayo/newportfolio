@@ -14,7 +14,7 @@ export default function Experience() {
     {
       title: "Software Developer Intern",
       company: "Lightweight Global Tech Solution Corp.",
-      date: "2025 - Present",
+      date: "Dec 2025 - April 2026",
       description: "Develop and maintain full-stack web applications using TypeScript and Python. Integrate third-party APIs and implement OCR solutions."
     },
   ]

@@ -13,17 +13,17 @@ interface Message {
 
 // Knowledge base about John Carlo Gamayo
 const knowledgeBase: { [key: string]: string } = {
-  name: "I'm John Carlo Gamayo, a Full-Stack Developer based in Pandi, Bulacan, Philippines.",
-  skills: "I specialize in TypeScript, React, Next.js, Node.js, Python, and various web technologies. I'm proficient in both frontend and backend development.",
+  name: "I'm John Carlo Gamayo, a Full-Stack AI Developer based in Pandi, Bulacan, Philippines.",
+  skills: "I specialize in full-stack engineering with AI integrations, including TypeScript, React, Next.js, Vite, Node.js, Python, FastAPI, LLM workflows, RAG pipelines, and API development.",
   location: "I'm based in Pandi, Bulacan, Philippines.",
   contact: "You can reach me at johncarlogamayo@gmail.com or call +63 911 352 90. Visit my portfolio at https://johncarlogamayo.netlify.app",
-  experience: "I'm a Full-Stack Developer with experience in building modern web applications using cutting-edge technologies.",
+  experience: "I build and maintain production-ready full-stack systems with AI capabilities, including secure APIs, document processing, deployment pipelines, and cloud-hosted applications.",
   education: "I have a strong educational background in computer science and software development.",
-  projects: "I've worked on various projects including web applications, APIs, and full-stack solutions using React, Next.js, and Node.js.",
-  tech: "I work with technologies like TypeScript, React, Next.js, Node.js, Python, TailwindCSS, PostgreSQL, MongoDB, and more.",
+  projects: "My latest projects include Resume Intelligence, EVEIA.AI, and Scholarly Aether - all focused on real-world AI, RAG, and full-stack system design.",
+  tech: "I work with React, Next.js, Vite, FastAPI, TypeScript, Python, APIs, OCR pipelines, RAG architecture, CI/CD workflows, and cloud deployment on Vercel and Render.",
   availability: "I'm available for freelance work and full-time opportunities. Feel free to schedule a call or send me an email!",
   resume: "You can download my resume using the 'Download Resume' button at the top of the page.",
-  default: "I'm John Carlo Gamayo, a Full-Stack Developer. I can answer questions about my skills, experience, projects, and contact information. Feel free to ask me anything!",
+  default: "I'm John Carlo Gamayo, a Full-Stack AI Developer. I can answer questions about my skills, projects, experience, and contact details. Feel free to ask me anything!",
 }
 
 function findBestMatch(input: string): string {
@@ -32,12 +32,12 @@ function findBestMatch(input: string): string {
   // Keywords mapping
   const keywords: { [key: string]: string[] } = {
     name: ['name', 'who are you', 'introduce', 'about you'],
-    skills: ['skill', 'technology', 'tech stack', 'programming', 'code', 'development'],
+    skills: ['skill', 'technology', 'tech stack', 'programming', 'code', 'development', 'ai', 'llm', 'rag'],
     location: ['location', 'where', 'live', 'based'],
     contact: ['contact', 'email', 'phone', 'reach', 'call'],
-    experience: ['experience', 'work', 'job', 'career'],
+    experience: ['experience', 'work', 'job', 'career', 'cicd', 'deployment', 'api'],
     education: ['education', 'school', 'study', 'degree'],
-    projects: ['project', 'portfolio', 'work', 'built', 'created'],
+    projects: ['project', 'portfolio', 'work', 'built', 'created', 'resume intelligence', 'eveia', 'scholarly aether'],
     tech: ['technology', 'tools', 'framework', 'language'],
     availability: ['available', 'hire', 'hiring', 'freelance', 'work'],
     resume: ['resume', 'cv', 'download'],

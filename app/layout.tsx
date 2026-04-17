@@ -9,10 +9,10 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'John Carlo Gamayo - Full-Stack Developer',
-  description: 'Full-stack developer portfolio showcasing web applications, projects, and technical expertise in TypeScript, React, Node.js, and Python.',
+  title: 'John Carlo Gamayo - Full-Stack AI Developer',
+  description: 'Full-stack AI developer portfolio showcasing production-ready web applications, LLM integrations, RAG systems, APIs, and deployment workflows using TypeScript and Python.',
   generator: 'v0.app',
-  keywords: ['Full-Stack Developer', 'Web Developer', 'React', 'TypeScript', 'Node.js', 'Python'],
+  keywords: ['Full-Stack AI Developer', 'Web Developer', 'React', 'TypeScript', 'Python', 'FastAPI', 'LLM', 'RAG', 'CI/CD', 'API Development'],
   icons: {
     icon: [
       {

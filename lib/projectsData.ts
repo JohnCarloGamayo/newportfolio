@@ -11,6 +11,36 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    title: "Resume Intelligence",
+    description: "A practical AI web app that helps job seekers transform resumes into role-ready, ATS-friendly versions. Users can upload PDF or DOCX resumes, paste a target job description, and receive AI-powered match analysis with actionable improvements. Includes a structured resume editor, analysis history, and safeguards such as daily IP-based rate limiting, policy warnings for inappropriate input, and validation before AI processing.",
+    shortDescription: "AI resume analyzer with ATS-focused optimization",
+    image: null,
+    video: null,
+    link: "https://ai-resume-by-jcg.vercel.app/",
+    isLive: true,
+    domain: "ai-resume-by-jcg.vercel.app"
+  },
+  {
+    title: "EVEIA.AI",
+    description: "A secure, organization-specific AI agent platform that turns internal documents into actionable insights and decision support. Built with RAG-based retrieval, OCR document processing, and secure knowledge base indexing so responses are grounded on approved organizational data. Supports reporting automation, contextual Q&A, and analytics-oriented AI outputs for business workflows.",
+    shortDescription: "Secure enterprise AI agents with RAG and OCR",
+    image: null,
+    video: null,
+    link: "https://alpha.eveia.ai/",
+    isLive: true,
+    domain: "alpha.eveia.ai"
+  },
+  {
+    title: "Scholarly Aether",
+    description: "An AI-powered research intelligence platform that converts unstructured materials into structured, queryable knowledge systems. Uses document ingestion pipelines, semantic retrieval, and RAG to provide contextual answers, summaries, and knowledge gap detection. Designed to help users move from static documents to interactive analysis and decision support.",
+    shortDescription: "AI research platform with semantic retrieval and RAG",
+    image: null,
+    video: null,
+    link: "https://scholarly-aether.vercel.app/",
+    isLive: true,
+    domain: "scholarly-aether.vercel.app"
+  },
+  {
     title: "TikTok Video Downloader",
     description: "A full-stack web application built with React + Vite on the frontend and Python FastAPI on the backend. The frontend is deployed on Vercel, while the backend API is hosted on Render. Designed for fast, simple, and user-friendly TikTok video downloading, with Google AdSense integration for monetization.",
     shortDescription: "Full-stack TikTok video downloader with monetization",

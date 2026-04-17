@@ -8,7 +8,7 @@ export default function Education() {
     {
       degree: "Bachelor of Science in Information Technology",
       school: "Bulacan State University",
-      period: "4th Year, Ongoing",
+      period: "Completed 2026",
       details: ""
     },
     {

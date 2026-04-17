@@ -64,7 +64,7 @@ export default function Header() {
                   <MapPin size={16} />
                   Pandi, Bulacan, Philippines
                 </p>
-                <p className="text-lg text-foreground mt-2">Full-Stack Developer</p>
+                <p className="text-lg text-foreground mt-2">Full-Stack AI Developer</p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ export default function Header() {
                 variant="default" 
                 size="sm"
                 className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                onClick={() => window.open('/johncarlo-resume.pdf', '_blank')}
+                onClick={() => window.open('/johncarlo-newresume.pdf', '_blank')}
               >
                 <Download size={16} />
                 Download Resume
